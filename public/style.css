@@ -1,0 +1,168 @@
+/* styling Global */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  background-color: #665ab6;
+  color: #fff;
+}
+/* clases condition js */
+.display-none {
+display: none !important;
+}
+
+.finishTask{
+  text-decoration-line: line-through;
+  text-decoration-style: wavy;
+}
+
+/* styling mainParagraph */
+.mainParagraph {
+  width: fit-content;
+  border-radius: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 4rem;
+  background-image: linear-gradient(
+    to top,
+    #352f5b 10%,
+    #352f5b 60%,
+    hsl(0, 0%, 100%, 0.1)
+  );
+}
+/* styling body Container */
+.container {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+/* styling Task  */
+.task {
+  display: flex;
+  width: 60vw;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  border-bottom: 1px solid white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: rgba(122, 175, 182, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-bottom: 1.3px solid white;
+}
+@media (max-width: 768px) {
+  .task {
+    width: 80vw;
+  }
+}
+@media (max-width: 400px) {
+  .task {
+    width: 90vw;
+  }
+}
+.fa-star {
+  transition: 0.2s;
+  font-size: 1.6rem;
+  color: #ffffff83;
+}
+
+.fa-solid:hover {
+  font-size: 1.8rem;
+  color: rgb(255, 94, 0);
+}
+.fa-face-angry {
+  color: rgb(255, 94, 0);
+  font-size: 1.4rem;
+  transition: 0.2s;
+}
+.fa-heart-circle-check{
+  color: red;
+}
+
+.fa-trash {
+  margin-right: 1rem;
+  font-size: 1.6rem;
+  transition: 0.2s;
+}
+/* styling next Paragraph */
+.nextTask {
+  font-weight: 200;
+  letter-spacing: 0.3rem;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+.sendTask {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 1.3rem;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+
+#input {
+  width: 30%;
+  background-color: #ffffff80;
+  border: none;
+  outline: none;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+}
+.fa-paper-plane {
+  font-size: 2rem;
+  cursor: pointer;
+  margin-bottom: 0.3rem;
+}
+@media (max-width: 1000px) {
+  #input {
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .sendTask {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #input {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+}
+button {
+  all: unset;
+}
+.Button {
+  /* background-color: transparent;
+  border: none; */
+  all: inset;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+  transform: scale(1.5);
+  transition: 0.2s;
+}
+.Button:hover {
+  color: rgb(255, 94, 0);
+  transform: scale(1.2);
+}
+.Button:focus {
+  transform: scale(1.2);
+}
+.changeColor{
+  color: rgb(255, 94, 0);
+  
+}
